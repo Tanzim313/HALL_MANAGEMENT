@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{% static 'dashboard.css' %}" />
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Student Dashboard</h2>
+            <ul>
+                <li><a href="#">Room Management</a></li>
+                <li><a href="#">Payment Management</a></li>
+                <li><a href="#">Student Profile</a></li>
+                <li><a href="{% url 'meal_management'%}">Meal Management</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Welcome to the Dashboard</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Room Management</h3>
+                    <p>Manage your room details here.</p>
+                </div>
+                <div class="card">
+                    <h3>Payment Management</h3>
+                    <p>View and manage your payments here.</p>
+                </div>
+                <div class="card">
+                    <h3>Student Profile</h3>
+                    <p>Edit and update your profile.</p>
+                </div>
+                <div class="card">
+                    <h3>Meal Management</h3>
+                    <p>Manage your meal preferences here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

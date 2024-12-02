@@ -1,0 +1,143 @@
+/* meal_management.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.meal-management-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Navigation Menu Styles */
+.navigation {
+    background-color: #34495e;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li {
+    margin-right: 20px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    padding: 8px 0;
+}
+
+/* Meal Order Form Styles */
+.meal-order form {
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-order label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.meal-order select, .meal-order input, .meal-order button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.meal-order button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.meal-order button:hover {
+    background-color: #1abc9c;
+}
+
+/* Feedback Section Styles */
+.meal-feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-feedback textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.meal-feedback button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.meal-feedback button:hover {
+    background-color: #1abc9c;
+}
+
+/* Daily Meal Count Styles */
+.meal-count p {
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Management</title>
+    <link rel="stylesheet" href="{% static 'profile.css' %}" />
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Picture Section -->
+        <div class="profile-picture">
+            <img src="{% static 'images/profile.jpg' %}" alt="Profile Picture">
+            <button class="edit-picture-btn">Change Picture</button>
+        </div>
+        
+        <!-- Profile Information Section -->
+        <div class="profile-info">
+            <h2>John Doe</h2>
+            <p>Email: johndoe@example.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 1234 Street, City, Country</p>
+        </div>
+        
+        <!-- Edit Profile Button -->
+        <button class="edit-profile-btn">Edit Profile</button>
+    </div>
+</body>
+</html>

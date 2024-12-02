@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIUC Hall Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'home.css' %}" />
+</head>
+<body>
+     
+    <!-- Button to toggle the slide menu -->
+    <!-- <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button> -->
+
+    <!-- Slide Menu -->
+
+    <!-- 
+    <div class="slide">
+        <h1>MENU</h1>
+        <ul>
+            <li><a href="/student/profile/"><i class="fas fa-user"></i>Student Profile</a></li>
+            <li><a href="/room/management/"><i class="fas fa-door-open"></i>Room Management</a></li>
+            <li><a href="/payment/management/"><i class="fas fa-credit-card"></i>Payment Management</a></li>
+            <li><a href="/meal/management/"><i class="fas fa-bullhorn"></i>Meal Management</a></li>
+            <li><a href="/about/"><i class="fas fa-info-circle"></i>About</a></li>
+        </ul>
+    </div>
+
+-->
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+
+                <li>
+                    <a href="#">STUDENT</a>
+
+                    <ul>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Achievements</a></li>
+                    </ul>
+                
+                </li>
+
+                <li><a href="{% url 'login' %}">LOGIN</a></li>
+                <li><a href="#">ADMINISTRATION</a></li>
+                <li><a href="#">CONTACT</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="university-header">
+        <h2>International Islamic University Chattogram</h2>
+    </div>
+
+    <div class="hall-image-section">
+        <img src="{% static 'images/osman1_hall.jpg' %}" alt="IIUC Hall" class="hall-image">
+    </div> 
+
+    <main>
+
+        <!-- First Section -->
+    <div class="section-one">
+        <!-- Left Box -->
+        <div class="image-box">
+            <img src="{% static 'images/pro.jpg' %}" alt="Square Image">
+            <p>Caption for the image goes here.</p>
+        </div>
+
+        <!-- Right Box -->
+        <div class="description-box">
+            <h1></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, lorem at vehicula vestibulum, neque tortor pulvinar lorem, a tempor ligula risus vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, lorem at vehicula vestibulum, neque tortor pulvinar lorem, a tempor ligula risus vel augueLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, lorem at vehicula vestibulum, neque tortor pulvinar lorem, a tempor ligula risus vel augueLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, lorem at vehicula vestibulum, neque tortor pulvinar lorem, a tempor ligula risus vel augueLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, lorem at vehicula vestibulum, neque tortor pulvinar lorem, a tempor ligula risus vel augueLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, lorem at vehicula vestibulum, neque tortor pulvinar lorem, a tempor ligula risus vel augue</p>
+        </div>
+    </div>
+
+    <!-- Second Section -->
+    <div class="section-two">
+        <div class="menu-card">
+            <img src="{% static 'images/pro.jpg' %}" alt="Menu Item">
+            <p>Menu Item 1 Description Menu Item 2 Description Menu Item 2 Description Menu Item 2 Description</p>
+            <button>Read More</button>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'images/pro.jpg' %}" alt="Menu Item">
+            <p>Menu Item 2 Description Menu Item 2 Description Menu Item 2 Description Menu Item 2 Description Menu Item 2 Description</p>
+            <button>Read More</button>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'images/pro.jpg' %}" alt="Menu Item">
+            <p>Menu Item 3 Description Menu Item 3 Description Menu Item 3 Description Menu Item 3 DescriptionMenu Item 3 DescriptionMenu Item 3 Description</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#">IIUC Hall Management</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+        </div>
+<!--
+        <div class="footer-management-sections">
+
+            <section class="management-section">
+                <h3>Student Management</h3>
+
+                <a href="/Student/registration/" class="button">Student Registration</a>
+                <a href="/Student/login/" class="button">Login System</a>
+                <a href="/Student/profile/" class="button">Profile Management</a>
+            </section>
+            
+            
+            <section class="management-section">
+                <h3>Room management</h3>
+            
+                <a href="/Room/allocate/" class="button">Room Allocation</a>
+                <a href="/Room/details/" class="button">Room Details</a>
+            </section>
+
+            
+            
+
+            <section class="management-section">
+                
+                <h3>Payment Management</h3>
+                
+                <a href="/Payment/process/" class="button">Process Payment</a>
+                <a href="/Payment/history/" class="button">Payment History</a>
+            </section>
+
+            <section class="management-section">
+                <h3>Notice Board</h3>
+                
+                <a href="/Notice/" class="button">View Notices</a>
+                <a href="/Notice/add/" class="button">Add Notice</a>
+            </section>
+
+            <section class="management-section">
+                <h3>Fee Management</h3>
+                
+                <a href="/Fee/manage/" class="button">Manage Fees</a>
+                <a href="/Fee/status/" class="button">Fee Status</a>
+            </section>
+
+        </div>
+    -->
+
+        <div class="social-links">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+
+        <p>&copy; 2024 Hall Management System. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle function for the menu
+        function toggleMenu() {
+            const menu = document.querySelector('.slide');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
